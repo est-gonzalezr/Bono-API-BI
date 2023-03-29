@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "93e66ddd-0597-4f21-a7b0-a84735757430",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25880190"
+	},
+	"item": [
+		{
+			"name": "Request 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"year\": 2018,\n    \"km_driven\": 30000,\n    \"seats\": 4,\n    \"max_power\": 20,\n    \"fuel\": \"Diesel\",\n    \"transmission\": \"Manual\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/predict",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"year\": 2014,\n    \"km_driven\": 100000,\n    \"seats\": 2,\n    \"max_power\": 10,\n    \"fuel\": \"Diesel\",\n    \"transmission\": \"Manual\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/predict",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
